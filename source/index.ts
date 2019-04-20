@@ -1,16 +1,15 @@
 export * from './basic'
+import { number, bool } from './number'
 import {
     token,
     groovy, java,
-    markdown,
+    markup, data,
     php, python,
     rust
-} from "./language";
+} from './language'
 
 
 export const rules = token
-    .concat(markdown)
-    .concat(rust)
-    .concat(java, groovy)
-    .concat(php, python)
-
+    .concat(number, bool)
+    .concat(markup, data)
+    .sort((a, b: any) => { return ('' + a.scope).localeCompare(b.scope) })

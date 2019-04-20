@@ -1,18 +1,13 @@
+export * from './groovy'
+export * from './java'
+export * from './markup'
+export * from './php'
+export * from './python'
+export * from './rust'
+
+export * from './data'
+
 export const token = [
-    {
-        name: 'Markup: Heading',
-        scope: 'markup.heading',
-        settings: {
-            fontStyle: 'bold'
-        }
-    },
-    {
-        name: 'Markup: Strong',
-        scope: 'markup.bold',
-        settings: {
-            fontStyle: 'bold'
-        }
-    },
     {
         name: 'Sections',
         scope: 'entity.name.section',
@@ -46,62 +41,6 @@ export const token = [
         settings: {
             fontStyle: 'bold',
             foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'support.variable.magic.python',
-        scope: 'support.variable.magic.python',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'punctuation.separator.parameters.python',
-        scope: 'punctuation.separator.period.python,punctuation.separator.element.python,punctuation.parenthesis.begin.python,punctuation.parenthesis.end.python,',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'variable.parameter.function.language.special.self.python',
-        scope: 'variable.parameter.function.language.special.self.python',
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'storage.modifier.lifetime.rust',
-        scope: 'storage.modifier.lifetime.rust',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'support.function.std.rust',
-        scope: 'support.function.std.rust',
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'entity.name.type.rust',
-        scope: 'entity.name.type.rust',
-        settings: {
-            foreground: '#56b6c2'
-        }
-    },
-    {
-        name: 'entity.name.lifetime.rust',
-        scope: 'entity.name.lifetime.rust',
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'variable.language.rust',
-        scope: 'variable.language.rust',
-        settings: {
-            foreground: '#e06c75'
         }
     },
     {
@@ -182,20 +121,6 @@ export const token = [
         }
     },
     {
-        name: 'c++ function',
-        scope: 'meta.function.c,meta.function.cpp',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'c++ block',
-        scope: 'punctuation.section.block.begin.bracket.curly.cpp,punctuation.section.block.end.bracket.curly.cpp,punctuation.terminator.statement.c,punctuation.section.block.begin.bracket.curly.c,punctuation.section.block.end.bracket.curly.c,punctuation.section.parens.begin.bracket.round.c,punctuation.section.parens.end.bracket.round.c,punctuation.section.parameters.begin.bracket.round.c,punctuation.section.parameters.end.bracket.round.c',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
         name: 'js/ts punctuation separator key-value',
         scope: 'punctuation.separator.key-value',
         settings: {
@@ -237,48 +162,7 @@ export const token = [
             foreground: '#E5C07B'
         }
     },
-    {
-        name: 'java type',
-        scope: 'storage.type.annotation.java',
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'java source',
-        scope: 'source.java',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'java modifier.import',
-        scope: 'punctuation.section.block.begin.java,punctuation.section.block.end.java,punctuation.definition.method-parameters.begin.java,punctuation.definition.method-parameters.end.java,meta.method.identifier.java,punctuation.section.method.begin.java,punctuation.section.method.end.java,punctuation.terminator.java,punctuation.section.class.begin.java,punctuation.section.class.end.java,punctuation.section.inner-class.begin.java,punctuation.section.inner-class.end.java,meta.method-call.java,storage.type.generic.java,punctuation.section.class.begin.bracket.curly.java,punctuation.section.class.end.bracket.curly.java,punctuation.section.method.begin.bracket.curly.java,punctuation.section.method.end.bracket.curly.java,punctuation.separator.period.java,meta.method.body.java',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'java modifier.import',
-        scope: 'meta.method.java',
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'java modifier.import',
-        scope: 'storage.modifier.import.java,storage.type.java',
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'java variable.name',
-        scope: 'meta.definition.variable.name.java',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
+ 
     {
         name: 'operator logical',
         scope: 'keyword.operator.logical.js',
@@ -378,13 +262,6 @@ export const token = [
         }
     },
     {
-        name: 'js/ts json',
-        scope: 'support.constant.json',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
-    {
         name: 'js/ts Keyword',
         scope: [
             'keyword.operator.expression.instanceof',
@@ -446,87 +323,10 @@ export const token = [
         }
     },
     {
-        name: 'C operator assignment',
-        scope: 'keyword.operator.assignment.c,keyword.operator.comparison.c,keyword.operator.c,keyword.operator.increment.c,keyword.operator.decrement.c,keyword.operator.bitwise.shift.c,keyword.operator.assignment.cpp,keyword.operator.comparison.cpp,keyword.operator.cpp,keyword.operator.increment.cpp,keyword.operator.decrement.cpp,keyword.operator.bitwise.shift.cpp',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
         name: 'Punctuation',
         scope: 'punctuation.separator.delimiter',
         settings: {
             foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'Other punctuation .c',
-        scope: 'punctuation.separator.c,punctuation.separator.cpp',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'C type posix-reserved',
-        scope: 'support.type.posix-reserved.c,support.type.posix-reserved.cpp',
-        settings: {
-            foreground: '#56b6c2'
-        }
-    },
-    {
-        name: 'keyword.operator.sizeof.c',
-        scope: 'keyword.operator.sizeof.c,keyword.operator.sizeof.cpp',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'python parameter',
-        scope: 'variable.parameter.function.language.python',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
-    {
-        name: 'python type',
-        scope: 'support.type.python',
-        settings: {
-            foreground: '#56b6c2'
-        }
-    },
-    {
-        name: 'python logical',
-        scope: 'keyword.operator.logical.python',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'pyCs',
-        scope: 'variable.parameter.function.python',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
-    {
-        name: 'python block',
-        scope: 'punctuation.definition.arguments.begin.python,punctuation.definition.arguments.end.python,punctuation.separator.arguments.python,punctuation.definition.list.begin.python,punctuation.definition.list.end.python',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'python function-call.generic',
-        scope: 'meta.function-call.generic.python',
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'python placeholder reset to normal string',
-        scope: 'constant.character.format.placeholder.other.python',
-        settings: {
-            foreground: '#98c379'
         }
     },
     {
@@ -572,20 +372,6 @@ export const token = [
         }
     },
     {
-        name: 'Java Variables',
-        scope: 'token.variable.parameter.java',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'Java Imports',
-        scope: 'import.storage.java',
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
         name: 'Packages',
         scope: 'token.package.keyword',
         settings: {
@@ -625,13 +411,6 @@ export const token = [
         }
     },
     {
-        name: 'Class name php',
-        scope: 'variable.other.class.php',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
         name: 'Type Name',
         scope: 'entity.name.type',
         settings: {
@@ -645,13 +424,7 @@ export const token = [
             foreground: '#c678dd'
         }
     },
-    {
-        name: 'Python Keyword Control',
-        scope: 'keyword.control.import.python,keyword.control.flow.python',
-        settings: {
-            fontStyle: 'italic'
-        }
-    },
+
     {
         name: 'Control Elements',
         scope: 'control.elements, keyword.operator.less',
@@ -685,13 +458,6 @@ export const token = [
         scope: 'keyword.operator.expression.delete,keyword.operator.expression.in,keyword.operator.expression.of,keyword.operator.expression.instanceof,keyword.operator.new,keyword.operator.expression.typeof,keyword.operator.expression.void',
         settings: {
             foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'Java Storage',
-        scope: 'token.storage.type.java',
-        settings: {
-            foreground: '#E5C07B'
         }
     },
     {
@@ -743,27 +509,7 @@ export const token = [
             foreground: '#56b6c2'
         }
     },
-    {
-        name: 'Integers',
-        scope: 'constant.numeric',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
-    {
-        name: 'Floats',
-        scope: 'none',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
-    {
-        name: 'Boolean',
-        scope: 'none',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
+
     {
         name: 'Constants',
         scope: 'constant',
@@ -874,125 +620,6 @@ export const token = [
         }
     },
     {
-        name: '[VSCODE-CUSTOM] Markdown headings',
-        scope: 'entity.name.section.markdown',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown heading Punctuation Definition',
-        scope: 'punctuation.definition.heading.markdown',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'punctuation.definition.list.begin.markdown',
-        scope: 'punctuation.definition.list.begin.markdown',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown heading setext',
-        scope: 'markup.heading.setext',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Punctuation Definition Bold',
-        scope: 'punctuation.definition.bold.markdown',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Inline Raw',
-        scope: 'markup.inline.raw.markdown',
-        settings: {
-            foreground: '#98c379'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Inline Raw',
-        scope: 'markup.inline.raw.string.markdown',
-        settings: {
-            foreground: '#98c379'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown List Punctuation Definition',
-        scope: 'punctuation.definition.list.markdown',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Quote',
-        scope: 'markup.quote.markdown',
-        settings: {
-            foreground: '#5C6370',
-            fontStyle: 'italic'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Punctuation Definition String',
-        scope: [
-            'punctuation.definition.string.begin.markdown',
-            'punctuation.definition.string.end.markdown',
-            'punctuation.definition.metadata.markdown'
-        ],
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'beginning.punctuation.definition.list.markdown',
-        scope: [
-            'beginning.punctuation.definition.list.markdown'
-        ],
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Punctuation Definition Link',
-        scope: 'punctuation.definition.metadata.markdown',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Underline Link/Image',
-        scope: 'markup.underline.link.markdown,markup.underline.link.image.markdown',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] Markdown Link Title/Description',
-        scope: 'string.other.link.title.markdown,string.other.link.description.markdown',
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'markup.italic.markdown',
-        scope: 'markup.italic.markdown',
-        settings: {
-            fontStyle: 'italic'
-        }
-    },
-    {
-        name: 'markup.bold.markdown',
-        scope: 'markup.bold.markdown',
-        settings: {
-            fontStyle: 'bold'
-        }
-    },
-    {
         name: 'Regular Expressions',
         scope: 'string.regexp',
         settings: {
@@ -1041,181 +668,7 @@ export const token = [
             foreground: '#FFFFFF'
         }
     },
-    {
-        name: 'Source Json Meta Structure Dictionary Json > String Quoted Json',
-        scope: 'source.json meta.structure.dictionary.json > string.quoted.json',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'Source Json Meta Structure Dictionary Json > String Quoted Json > Punctuation String',
-        scope: 'source.json meta.structure.dictionary.json > string.quoted.json > punctuation.string',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'Source Json Meta Structure Dictionary Json > Value Json > String Quoted Json,source Json Meta Structure Array Json > Value Json > String Quoted Json,source Json Meta Structure Dictionary Json > Value Json > String Quoted Json > Punctuation,source Json Meta Structure Array Json > Value Json > String Quoted Json > Punctuation',
-        scope: 'source.json meta.structure.dictionary.json > value.json > string.quoted.json,source.json meta.structure.array.json > value.json > string.quoted.json,source.json meta.structure.dictionary.json > value.json > string.quoted.json > punctuation,source.json meta.structure.array.json > value.json > string.quoted.json > punctuation',
-        settings: {
-            foreground: '#98c379'
-        }
-    },
-    {
-        name: 'Source Json Meta Structure Dictionary Json > Constant Language Json,source Json Meta Structure Array Json > Constant Language Json',
-        scope: 'source.json meta.structure.dictionary.json > constant.language.json,source.json meta.structure.array.json > constant.language.json',
-        settings: {
-            foreground: '#56b6c2'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] JSON Property Name',
-        scope: 'support.type.property-name.json',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: '[VSCODE-CUSTOM] JSON Punctuation for Property Name',
-        scope: 'support.type.property-name.json punctuation',
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'laravel blade tag',
-        scope: 'text.html.laravel-blade source.php.embedded.line.html entity.name.tag.laravel-blade',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'laravel blade @',
-        scope: 'text.html.laravel-blade source.php.embedded.line.html support.constant.laravel-blade',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'use statement for other classes',
-        scope: 'support.other.namespace.use.php,support.other.namespace.use-as.php,support.other.namespace.php,entity.other.alias.php,meta.interface.php',
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'error suppression',
-        scope: 'keyword.operator.error-control.php',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'php instanceof',
-        scope: 'keyword.operator.type.php',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'style double quoted array index normal begin',
-        scope: 'punctuation.section.array.begin.php',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'style double quoted array index normal end',
-        scope: 'punctuation.section.array.end.php',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'php illegal.non-null-typehinted',
-        scope: 'invalid.illegal.non-null-typehinted.php',
-        settings: {
-            foreground: '#f44747'
-        }
-    },
-    {
-        name: 'php types',
-        scope: 'storage.type.php,meta.other.type.phpdoc.php,keyword.other.type.php,keyword.other.array.phpdoc.php',
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'php call-function',
-        scope: 'meta.function-call.php,meta.function-call.object.php,meta.function-call.static.php',
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'php function-resets',
-        scope: 'punctuation.definition.parameters.begin.bracket.round.php,punctuation.definition.parameters.end.bracket.round.php,punctuation.separator.delimiter.php,punctuation.section.scope.begin.php,punctuation.section.scope.end.php,punctuation.terminator.expression.php,punctuation.definition.arguments.begin.bracket.round.php,punctuation.definition.arguments.end.bracket.round.php,punctuation.definition.storage-type.begin.bracket.round.php,punctuation.definition.storage-type.end.bracket.round.php,punctuation.definition.array.begin.bracket.round.php,punctuation.definition.array.end.bracket.round.php,punctuation.definition.begin.bracket.round.php,punctuation.definition.end.bracket.round.php,punctuation.definition.begin.bracket.curly.php,punctuation.definition.end.bracket.curly.php,punctuation.definition.section.switch-block.end.bracket.curly.php,punctuation.definition.section.switch-block.start.bracket.curly.php,punctuation.definition.section.switch-block.begin.bracket.curly.php,punctuation.definition.section.switch-block.end.bracket.curly.php',
-        settings: {
-            foreground: '#abb2bf'
-        }
-    },
-    {
-        name: 'support php constants',
-        scope: 'support.constant.ext.php,support.constant.std.php,support.constant.core.php,support.constant.parser-token.php',
-        settings: {
-            foreground: '#d19a66'
-        }
-    },
-    {
-        name: 'php goto',
-        scope: 'entity.name.goto-label.php,support.other.php',
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'php logical/bitwise operator',
-        scope: 'keyword.operator.logical.php,keyword.operator.bitwise.php,keyword.operator.arithmetic.php',
-        settings: {
-            foreground: '#56b6c2'
-        }
-    },
-    {
-        name: 'php regexp operator',
-        scope: 'keyword.operator.regexp.php',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'php comparison',
-        scope: 'keyword.operator.comparison.php',
-        settings: {
-            foreground: '#56b6c2'
-        }
-    },
-    {
-        name: 'php heredoc/nowdoc',
-        scope: 'keyword.operator.heredoc.php,keyword.operator.nowdoc.php',
-        settings: {
-            foreground: '#c678dd'
-        }
-    },
-    {
-        name: 'python function decorator @',
-        scope: 'meta.function.decorator.python',
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'python function support',
-        scope: 'support.token.decorator.python,meta.function.decorator.identifier.python',
-        settings: {
-            foreground: '#56b6c2'
-        }
-    },
+
     {
         name: 'parameter function',
         scope: 'function.parameter',
@@ -1568,42 +1021,6 @@ export const token = [
         ],
         settings: {
             foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'Groovy import names',
-        scope: [
-            'storage.modifier.import.groovy'
-        ],
-        settings: {
-            foreground: '#E5C07B'
-        }
-    },
-    {
-        name: 'Groovy Methods',
-        scope: [
-            'meta.method.groovy'
-        ],
-        settings: {
-            foreground: '#61AFEF'
-        }
-    },
-    {
-        name: 'Groovy Variables',
-        scope: [
-            'meta.definition.variable.name.groovy'
-        ],
-        settings: {
-            foreground: '#e06c75'
-        }
-    },
-    {
-        name: 'Groovy Inheritance',
-        scope: [
-            'meta.definition.class.inherited.classes.groovy'
-        ],
-        settings: {
-            foreground: '#98c379'
         }
     },
     {

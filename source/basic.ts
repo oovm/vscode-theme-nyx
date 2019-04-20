@@ -43,7 +43,7 @@ export const UI = {
     'editorSuggestWidget.border': '#181a1f',
     'editorSuggestWidget.selectedBackground': '#2c313a',
     'editorWidget.background': '#21252b',
-    "focusBorder": '#464646',
+    'focusBorder': '#464646',
     'input.background': '#1d1f23',
     'list.activeSelectionBackground': '#2c313a',
     'list.activeSelectionForeground': '#d7dae0',
