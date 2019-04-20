@@ -1,0 +1,34 @@
+{
+    "name": "nyx-theme",
+    "displayName": "VScode Theme Nyx",
+    "version": "2.21.0",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "scripts": {
+        "build": "ts-node themes/build.ts",
+        "docs": "docsify serve docs",
+        "lint": "tslint **/*.ts --fix"
+    },
+    "pre-commit": [
+        "build"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Nyx Bold",
+                "uiTheme": "vs-dark",
+                "path": "./themes/nyx-bold.json"
+            }
+        ]
+    },
+    "icon": "icon.png",
+    "devDependencies": {
+        "@types/node": "^11.13.6",
+        "pre-commit": "^1.2.2"
+    },
+    "galleryBanner": {
+        "color": "#2d323b",
+        "theme": "dark"
+    }
+}
