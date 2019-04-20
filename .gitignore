@@ -6,3 +6,4 @@
 # Node
 node_modules
 *.log
+yarn.lock
