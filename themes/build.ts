@@ -1,10 +1,10 @@
-import { UI,token } from '../source'
+import { UI, rules } from '../source'
 import { writeFileSync } from 'fs'
 const theme_bold = {
     name: 'Nyx Bold',
     type: 'dark',
     colors: UI,
-    tokenColors: token
+    tokenColors: rules
 }
 
 
