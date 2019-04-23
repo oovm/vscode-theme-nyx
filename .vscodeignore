@@ -1,4 +1,7 @@
-static
-docs
-static/*.*
-docs/*.*
+node_modules
+.idea
+.vscode
+source
+test
+
+*.ts

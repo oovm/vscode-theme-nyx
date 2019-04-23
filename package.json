@@ -1,34 +1,41 @@
 {
-    "name": "nyx-theme",
+	"name": "nyx-theme",
     "displayName": "VScode Theme Nyx",
-    "version": "2.21.0",
-    "engines": {
-        "vscode": "^1.12.0"
-    },
-    "scripts": {
-        "build": "ts-node themes/build.ts",
-        "docs": "docsify serve docs",
-        "lint": "tslint **/*.ts --fix"
-    },
-    "pre-commit": [
-        "build"
-    ],
-    "contributes": {
-        "themes": [
-            {
-                "label": "Nyx Bold",
-                "uiTheme": "vs-dark",
-                "path": "./themes/nyx-bold.json"
-            }
-        ]
-    },
-    "icon": "icon.png",
-    "devDependencies": {
-        "@types/node": "^11.13.6",
-        "pre-commit": "^1.2.2"
-    },
-    "galleryBanner": {
-        "color": "#2d323b",
-        "theme": "dark"
-    }
+    "description": "My personal theme ",
+	"version": "1.0.0",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/GalAster/vscode-theme-nyx.git"
+	},
+	"publisher": "aster",
+	"engines": {
+		"vscode": "^1.12.0"
+	},
+	"scripts": {
+		"build": "ts-node themes/build.ts",
+		"lint": "tslint **/*.ts --fix"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Nyx Bold",
+				"uiTheme": "vs-dark",
+				"path": "./themes/nyx-bold.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@types/node": "^11.13.6",
+		"pre-commit": "^1.2.2"
+	},
+	"galleryBanner": {
+		"color": "#2d323b",
+		"theme": "dark"
+	},
+	"__metadata": {
+		"id": "ad350ae4-8890-4f98-895a-58bdbc260734",
+		"publisherDisplayName": "Aster",
+		"publisherId": "3406b78c-f287-4619-8d82-7c97998693e3"
+	}
 }
