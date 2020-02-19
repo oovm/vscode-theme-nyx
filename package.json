@@ -2,7 +2,7 @@
     "name": "nyx-theme",
     "displayName": "Nyx Theme ",
     "description": "My personal theme ",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "icon": "icon.png",
     "repository": {
         "type": "git",

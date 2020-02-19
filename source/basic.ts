@@ -91,5 +91,5 @@ export const UI = {
     'titleBar.activeForeground': '#9da5b4',
     'titleBar.inactiveBackground': '#21252b',
     'titleBar.inactiveForeground': '#6b717d',
-    'textLink.foreground': '#61afef'
+    'textLink.foreground': '#61afef',
 }

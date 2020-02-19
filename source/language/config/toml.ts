@@ -2,7 +2,8 @@ const datetime: any = [
     {
         name: 'First Class Time Type',
         scope: [
-            'constant.other.time',
+            // Override ARC
+            'constant.other.time.toml',
         ],
         settings: {
             foreground: '#56B6C2',
@@ -11,7 +12,8 @@ const datetime: any = [
     {
         name: 'First Class Data Type',
         scope: [
-            'constant.other.date',
+            // Override ARC
+            'constant.other.date.toml',
         ],
         settings: {
             foreground: '#56B6C2',
@@ -20,7 +22,9 @@ const datetime: any = [
     {
         name: 'First Class DataTime Type',
         scope: [
-            'constant.other.datetime',
+            // Override ARC
+            'constant.other.datetime.local.toml',
+            'constant.other.datetime.offset.toml',
         ],
         settings: {
             foreground: '#56B6C2',
